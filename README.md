@@ -2,20 +2,21 @@
 
 Hello Team **Tech Mavericks** from **G M Institute Of Technology-Davanagere**,
 
-Welcome to the Hackathon! We're excited to have you on board and can't wait to see what you'll build under the theme **"Improving healthcare through technology"** 
+Welcome to the Hackathon! We're excited to have you on board and can't wait to see what you'll build under the theme **"Improving healthcare through technology"**
 
 ## Team Details
 
-- **Team Number:** 31  
+- **Team Number:** 31
 - **Team Name:** Tech Mavericks
-- **Team Leader:** Vivek P M  
-- **Email:** pmv068477@gmail.com  
-- **Phone:** 8951505885  
+- **Team Leader:** Vivek P M
+- **Email:** pmv068477@gmail.com
+- **Phone:** 8951505885
 
 ### Team Members:
-- Shree Lakshmi M 
-- Varshitha L U 
-- Swathi A 
+
+- Shree Lakshmi M
+- Varshitha L U
+- Swathi A
 
 ## Problem Statement
 
@@ -23,7 +24,7 @@ Welcome to the Hackathon! We're excited to have you on board and can't wait to s
 
 ---
 
-### Let's Get Started 
+### Let's Get Started
 
 This repository has been set up for your hackathon project. Use it to manage your code, collaborate, and share your progress.
 
@@ -34,8 +35,7 @@ This repository has been set up for your hackathon project. Use it to manage you
 
 - Maintain **professionalism and integrity** at all times. Any form of plagiarism or rule-breaking will lead to strict action.
 
-Let's keep it fair, fun, and impactful! 
----
+## Let's keep it fair, fun, and impactful!
 
 **Good luck, Team Tech Mavericks! Happy coding!**
 
@@ -43,3 +43,5 @@ If you need any support during the hackathon, don't hesitate to reach out to the
 
 Cheers,  
 _Advaya Hackathon Team_
+
+....
