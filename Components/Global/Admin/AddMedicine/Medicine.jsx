@@ -70,7 +70,7 @@ const Medicine = ({
       review: 2,
       quentity: 5,
       code: "0405689",
-      brand: "@theblockchaincoders",
+      brand: "Tech Mavericks",
       disease: ["Fever", "Headache", "Energy"],
       description:
         "The  tech  mavericks  will  help in managing the diabetics in a organised way‍",
@@ -83,7 +83,7 @@ const Medicine = ({
       review: 2,
       quentity: 5,
       code: "0405689",
-      brand: "@theblockchaincoders",
+      brand: "Tech Mavericks",
       disease: ["Fever", "Headache", "Energy"],
       description:
         "The tech  mavericks  will  help in managing the diabetics in a organised way ‍",
@@ -96,7 +96,7 @@ const Medicine = ({
       review: 2,
       quentity: 5,
       code: "0405689",
-      brand: "@theblockchaincoders",
+      brand: "Tech Mavericks",
       disease: ["Fever", "Headache", "Energy"],
       description:
         "The  tech  mavericks  will  help in managing the diabetics in a organised way‍",
@@ -109,7 +109,7 @@ const Medicine = ({
       review: 2,
       quentity: 5,
       code: "0405689",
-      brand: "@theblockchaincoders",
+      brand: "Tech Mavericks",
       disease: ["Fever", "Headache", "Energy"],
       description:
         "The tech  mavericks  will  help in managing the diabetics in a organised way ‍",
@@ -122,7 +122,7 @@ const Medicine = ({
       review: 2,
       quentity: 5,
       code: "0405689",
-      brand: "@theblockchaincoders",
+      brand: "Tech Mavericks",
       disease: ["Fever", "Headache", "Energy"],
       description:
         "The tech  mavericks  will  help in managing the diabetics in a organised way ‍",
@@ -135,7 +135,7 @@ const Medicine = ({
       review: 2,
       quentity: 5,
       code: "0405689",
-      brand: "@theblockchaincoders",
+      brand: "Tech Mavericks",
       disease: ["Fever", "Headache", "Energy"],
       description:
         "The tech  mavericks  will  help in managing the diabetics in a organised way ‍",
