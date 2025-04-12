@@ -397,7 +397,7 @@ contract Healthcare {
 
          ADD_NOTIFICATION(msg.sender, "You have successfully bought medicine", "Patient");
 
-        ADD_NOTIFICATION(admin, "Transaction completed, madicine bought successfully", "Patient");
+        ADD_NOTIFICATION(admin, "Transaction completed, medicine bought successfully", "Patient");
 
         emit MEDICINE_BOUGHT(_patientId, _medicineId);
     }
