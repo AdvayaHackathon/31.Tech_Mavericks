@@ -113,7 +113,7 @@ const AddPatient = ({ registerDoctors }) => {
                   }
                 />
                 <Input
-                  name={"Condition"}
+                  name={"Injury/Condition"}
                   type={"text"}
                   handleChange={(e) =>
                     setPatient({ ...patient, medicialHistory: e.target.value })

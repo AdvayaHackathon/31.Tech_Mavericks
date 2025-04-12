@@ -5,28 +5,32 @@ import { UPLOAD_IPFS_IMAGE } from "../../../../Context/constants";
 import Input from "../../Regular/Input";
 
 import { useStateContext } from "../../../../Context/index";
-const AddMedice = ({ registerDoctors }) => {
-  const { ADD_MEDICINE, setLoader, notifySuccess, notifyError } =
+
+const AddDoctor = () => {
+  const { ADD_DOCTOR, setLoader, notifySuccess, notifyError } =
     useStateContext();
 
-  const [medicine, setMedicine] = useState({
-    verifyingDoctor: "",
-    name: "",
-    brand: "",
-    manufacturer: "",
-    manufacturDate: "",
-    expiryDate: "",
-    code: "",
-    companyEmail: "",
-    discount: "",
-    manufactureAddress: "",
-    price: "",
-    quantity: "",
-    currentLocation: "",
+  const [doctor, setDoctor] = useState({
+    title: "",
+    firstName: "",
+    lastName: "",
+    gender: "",
+    degrer: "",
+    yourAddress: "",
+    designation: "",
+    lastWork: "",
     mobile: "",
-    email: "",
+    emailID: "",
+    collageName: "",
+    collageID: "",
+    joiningYear: "",
+    endYear: "",
+    specialization: "",
+    registrationID: "",
+    collageAddress: "",
+    walletAddress: "",
     image: "",
-    description: "",
+    biography: "",
   });
 
   const handleImageChange = async (event) => {
@@ -35,7 +39,7 @@ const AddMedice = ({ registerDoctors }) => {
       const file = event.target.files[0];
       if (file) {
         const imgUrl = await UPLOAD_IPFS_IMAGE(file);
-        setMedicine({ ...medicine, image: imgUrl });
+        setDoctor({ ...doctor, image: imgUrl });
         setLoader(false);
         notifySuccess("Image uploaded successfully");
       }
@@ -58,7 +62,7 @@ const AddMedice = ({ registerDoctors }) => {
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title" id="exampleModalLabel">
-              Add Medicine
+              Add Doctor
             </h5>
             <button
               type="button"
@@ -68,182 +72,188 @@ const AddMedice = ({ registerDoctors }) => {
             />
           </div>
           <div className="modal-body">
-            <form>
+            <div>
               <div className="row">
                 <div className="col-xl-12">
                   <div className="form-group">
-                    <label className="col-form-label">Verifying Doctor:</label>
+                    <label className="col-form-label">Title:</label>
                     <select
                       className="form-control"
                       onChange={(e) =>
-                        setMedicine({
-                          ...medicine,
-                          verifyingDoctor: e.target.value,
-                        })
+                        setDoctor({ ...doctor, title: e.target.value })
                       }
                     >
-                      {" "}
-                      <option>Select Doctor</option>
-                      {registerDoctors?.map((doctor, index) => (
-                        <option>
-                          {doctor?.title} {doctor?.firstName} {doctor?.lastName}
-                        </option>
-                      ))}
+                      <option value="Miss">Miss</option>
+                      <option value="Mr.">Mr.</option>
+                      <option value="Mrs.">Mrs.</option>
                     </select>
                   </div>
                 </div>
                 <Input
-                  name={"Medicine Name"}
+                  name={"Name"}
                   type={"text"}
                   handleChange={(e) =>
-                    setMedicine({ ...medicine, name: e.target.value })
+                    setDoctor({ ...doctor, firstName: e.target.value })
                   }
                 />
                 <Input
-                  name={"Brand"}
+                  name={"Last Name"}
                   type={"text"}
                   handleChange={(e) =>
-                    setMedicine({ ...medicine, brand: e.target.value })
+                    setDoctor({ ...doctor, lastName: e.target.value })
                   }
                 />
                 <Input
-                  name={"Manufacturer"}
+                  name={"Gender"}
                   type={"text"}
                   handleChange={(e) =>
-                    setMedicine({ ...medicine, manufacturer: e.target.value })
+                    setDoctor({ ...doctor, gender: e.target.value })
                   }
                 />
                 <Input
-                  name={"Manufacture Date"}
-                  type={"date"}
-                  handleChange={(e) =>
-                    setMedicine({ ...medicine, manufacturDate: e.target.value })
-                  }
-                />
-                <Input
-                  name={"Expiry Date"}
-                  type={"date"}
-                  handleChange={(e) =>
-                    setMedicine({ ...medicine, expiryDate: e.target.value })
-                  }
-                />
-                <Input
-                  name={"Code"}
+                  name={"Degrer"}
                   type={"text"}
                   handleChange={(e) =>
-                    setMedicine({ ...medicine, code: e.target.value })
-                  }
-                />
-                <Input
-                  name={"Company Email"}
-                  type={"text"}
-                  handleChange={(e) =>
-                    setMedicine({ ...medicine, companyEmail: e.target.value })
-                  }
-                />{" "}
-                <Input
-                  name={"Discount"}
-                  type={"text"}
-                  handleChange={(e) =>
-                    setMedicine({ ...medicine, discount: e.target.value })
+                    setDoctor({ ...doctor, degrer: e.target.value })
                   }
                 />
                 <div className="col-xl-12">
                   <div className="form-group">
-                    <label className="col-form-label">
-                      Manufacture Address :
-                    </label>
+                    <label className="col-form-label">Address :</label>
                     <textarea
                       className="form-control"
                       id="exampleFormControlTextarea1"
                       rows={3}
                       defaultValue={""}
                       onChange={(e) =>
-                        setMedicine({
-                          ...medicine,
-                          manufactureAddress: e.target.value,
-                        })
+                        setDoctor({ ...doctor, yourAddress: e.target.value })
                       }
                     />
                   </div>
                 </div>{" "}
                 <Input
-                  name={"Price"}
+                  name={"Designation"}
                   type={"text"}
                   handleChange={(e) =>
-                    setMedicine({ ...medicine, price: e.target.value })
+                    setDoctor({ ...doctor, designation: e.target.value })
                   }
                 />
                 <Input
-                  name={"Quantity"}
+                  name={"Last Work"}
                   type={"text"}
                   handleChange={(e) =>
-                    setMedicine({ ...medicine, quantity: e.target.value })
+                    setDoctor({ ...doctor, lastWork: e.target.value })
                   }
                 />
-                <div className="col-xl-12">
-                  <div className="form-group">
-                    <label className="col-form-label">
-                      Current Location Address:
-                    </label>
-                    <textarea
-                      className="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows={3}
-                      defaultValue={""}
-                      onChange={(e) =>
-                        setMedicine({
-                          ...medicine,
-                          currentLocation: e.target.value,
-                        })
-                      }
-                    />
-                  </div>
-                </div>{" "}
                 <Input
                   name={"Mobile"}
                   type={"text"}
                   handleChange={(e) =>
-                    setMedicine({ ...medicine, mobile: e.target.value })
+                    setDoctor({ ...doctor, mobile: e.target.value })
                   }
                 />
                 <Input
                   name={"EmailID"}
                   type={"email"}
                   handleChange={(e) =>
-                    setMedicine({ ...medicine, email: e.target.value })
+                    setDoctor({ ...doctor, emailID: e.target.value })
+                  }
+                />
+                <Input
+                  name={"Collage Name"}
+                  type={"text"}
+                  handleChange={(e) =>
+                    setDoctor({ ...doctor, collageName: e.target.value })
+                  }
+                />
+                <Input
+                  name={"Collage ID"}
+                  type={"text"}
+                  handleChange={(e) =>
+                    setDoctor({ ...doctor, collageID: e.target.value })
+                  }
+                />
+                <Input
+                  name={"Joining Year"}
+                  type={"date"}
+                  handleChange={(e) =>
+                    setDoctor({ ...doctor, joiningYear: e.target.value })
+                  }
+                />
+                <Input
+                  name={"End Year"}
+                  type={"date"}
+                  handleChange={(e) =>
+                    setDoctor({ ...doctor, endYear: e.target.value })
+                  }
+                />
+                <Input
+                  name={"Specialization"}
+                  type={"text"}
+                  handleChange={(e) =>
+                    setDoctor({ ...doctor, specialization: e.target.value })
+                  }
+                />
+                <Input
+                  name={"Registration ID"}
+                  type={"text"}
+                  handleChange={(e) =>
+                    setDoctor({ ...doctor, registrationID: e.target.value })
                   }
                 />
                 <div className="col-xl-12">
                   <div className="form-group">
-                    <label className="col-form-label">Upload Image</label>
+                    <label className="col-form-label">Collage Address :</label>
+                    <textarea
+                      className="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows={3}
+                      defaultValue={""}
+                      onChange={(e) =>
+                        setDoctor({ ...doctor, collageAddress: e.target.value })
+                      }
+                    />
+                  </div>
+                </div>
+                <div className="col-xl-12">
+                  <div className="form-group">
+                    <label className="col-form-label">Wallet Address</label>
                     <input
                       size={16}
+                      className="form-control"
+                      type="text"
+                      onChange={(e) =>
+                        setDoctor({ ...doctor, walletAddress: e.target.value })
+                      }
+                    />
+                  </div>
+                </div>
+                <div className="col-xl-12">
+                  <div className="form-group">
+                    <label className="col-form-label">Upload Profile</label>
+                    <input
                       className="form-control"
                       id="file"
                       onChange={handleImageChange}
                       type="file"
                     />
                   </div>
-                </div>{" "}
+                </div>
                 <div className="col-xl-12">
                   <div className="form-group">
-                    <label className="col-form-label">Description:</label>
+                    <label className="col-form-label">Biography:</label>
                     <textarea
                       className="form-control"
                       id="exampleFormControlTextarea2"
                       rows={3}
                       onChange={(e) =>
-                        setMedicine({
-                          ...medicine,
-                          description: e.target.value,
-                        })
+                        setDoctor({ ...doctor, biography: e.target.value })
                       }
                     />
                   </div>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
           <div className="modal-footer">
             <button
@@ -254,10 +264,10 @@ const AddMedice = ({ registerDoctors }) => {
               Close
             </button>
             <button
-              onClick={() => ADD_MEDICINE(medicine)}
+              onClick={() => ADD_DOCTOR(doctor)}
               className="btn btn-primary"
             >
-              Add Medicine
+              Add Doctor
             </button>
           </div>
         </div>
@@ -266,4 +276,4 @@ const AddMedice = ({ registerDoctors }) => {
   );
 };
 
-export default AddMedice;
+export default AddDoctor;

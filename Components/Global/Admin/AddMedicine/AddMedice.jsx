@@ -21,7 +21,7 @@ const AddMedice = ({ registerDoctors }) => {
     discount: "",
     manufactureAddress: "",
     price: "",
-    quantity: "",
+    quentity: "",
     currentLocation: "",
     mobile: "",
     email: "",
@@ -175,10 +175,10 @@ const AddMedice = ({ registerDoctors }) => {
                   }
                 />
                 <Input
-                  name={"Quantity"}
+                  name={"Quentity"}
                   type={"text"}
                   handleChange={(e) =>
-                    setMedicine({ ...medicine, quantity: e.target.value })
+                    setMedicine({ ...medicine, quentity: e.target.value })
                   }
                 />
                 <div className="col-xl-12">

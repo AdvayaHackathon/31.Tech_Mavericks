@@ -45,7 +45,7 @@ const Medicine = ({
       name: "Price",
     },
     {
-      name: "Quantity",
+      name: "Quentity",
     },
     {
       name: "Discount",
@@ -70,10 +70,10 @@ const Medicine = ({
       review: 2,
       quentity: 5,
       code: "0405689",
-      brand: "Tech Mavericks",
+      brand: "@theblockchaincoders",
       disease: ["Fever", "Headache", "Energy"],
       description:
-        "The  tech  mavericks  will  help in managing the diabetics in a organised way‍",
+        "The Blockchain Coders brings together organizations from across web3 to create the largest community learning blockchain education. ‍",
     },
     {
       name: "RadiantGlow Serum",
@@ -83,10 +83,10 @@ const Medicine = ({
       review: 2,
       quentity: 5,
       code: "0405689",
-      brand: "Tech Mavericks",
+      brand: "@theblockchaincoders",
       disease: ["Fever", "Headache", "Energy"],
       description:
-        "The tech  mavericks  will  help in managing the diabetics in a organised way ‍",
+        "The Blockchain Coders brings together organizations from across web3 to create the largest community learning blockchain education. ‍",
     },
     {
       name: "RadiantGlow Serum",
@@ -96,10 +96,10 @@ const Medicine = ({
       review: 2,
       quentity: 5,
       code: "0405689",
-      brand: "Tech Mavericks",
+      brand: "@theblockchaincoders",
       disease: ["Fever", "Headache", "Energy"],
       description:
-        "The  tech  mavericks  will  help in managing the diabetics in a organised way‍",
+        "The Blockchain Coders brings together organizations from across web3 to create the largest community learning blockchain education. ‍",
     },
     {
       name: "RadiantGlow Serum",
@@ -109,10 +109,10 @@ const Medicine = ({
       review: 2,
       quentity: 5,
       code: "0405689",
-      brand: "Tech Mavericks",
+      brand: "@theblockchaincoders",
       disease: ["Fever", "Headache", "Energy"],
       description:
-        "The tech  mavericks  will  help in managing the diabetics in a organised way ‍",
+        "The Blockchain Coders brings together organizations from across web3 to create the largest community learning blockchain education. ‍",
     },
     {
       name: "RadiantGlow Serum",
@@ -122,10 +122,10 @@ const Medicine = ({
       review: 2,
       quentity: 5,
       code: "0405689",
-      brand: "Tech Mavericks",
+      brand: "@theblockchaincoders",
       disease: ["Fever", "Headache", "Energy"],
       description:
-        "The tech  mavericks  will  help in managing the diabetics in a organised way ‍",
+        "The Blockchain Coders brings together organizations from across web3 to create the largest community learning blockchain education. ‍",
     },
     {
       name: "RadiantGlow Serum",
@@ -135,10 +135,10 @@ const Medicine = ({
       review: 2,
       quentity: 5,
       code: "0405689",
-      brand: "Tech Mavericks",
+      brand: "@theblockchaincoders",
       disease: ["Fever", "Headache", "Energy"],
       description:
-        "The tech  mavericks  will  help in managing the diabetics in a organised way ‍",
+        "The Blockchain Coders brings together organizations from across web3 to create the largest community learning blockchain education. ‍",
     },
   ];
 
